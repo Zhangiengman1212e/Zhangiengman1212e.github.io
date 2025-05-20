@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>阳春</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url("https://i.imgs.ovh/2025/05/18/SMg5b.gif") no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        .music-player {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 86px;
+            border: none;
+            margin: 0 auto;
+        }
+        
+        /* 隐藏原GIF容器 */
+        .gif-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 固定在顶部的音乐播放器 -->
+    <div class="music-player">
+        <iframe 
+            frameborder="no" 
+            border="0" 
+            marginwidth="0" 
+            marginheight="0"
+            src="https://music.163.com/outchain/player?type=2&id=2135890424&auto=0&height=66">
+        </iframe>
+    </div>
+
+    <!-- 原GIF容器（已隐藏） -->
+    <div class="gif-container">
+        <img src="https://i.imgs.ovh/2025/05/18/SMg5b.gif" alt="动态图">
+    </div>
+</body>
+</html>
